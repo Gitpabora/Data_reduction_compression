@@ -5,7 +5,7 @@ by
 # The algorithms experimented with with high resolution image data  as a part of preprocessing of data  :SVD, PCA, K-mean 
 
 an example image 
-<img align="right" src="https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/sample_image.jpg" width="400">
+<img align="left" src="https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/sample_image.jpg" width="100">
 
 A brief note about the methods
     |------------------------------------------------------------------------------------------------------------------------------------------|
@@ -31,7 +31,7 @@ https://colab.research.google.com/drive/1eG843MHVTwohPAqRmsQa8JToxPNJZR1M?usp=sh
 ##Experiment Results PCA
 
 
-
+https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/output
 
 
 
@@ -39,13 +39,13 @@ https://colab.research.google.com/drive/1eG843MHVTwohPAqRmsQa8JToxPNJZR1M?usp=sh
 PCA compr
     | components  |  c ratio     |Explained variance                        | Reconstructed Image           |    Percentage Reduction
     |------------ | ------------- | -----------------------------------------|-------------------------------|------------------------|
-    | 10          |  99.076202    |![](Data_reduction_compression/sample_data/output/Explained_variance10.png)
-    | 20          |  98.152403    | Explained_variance20.png
-    | 30          |  97.228605    | Explained_variance30.png
-    | 40          |  96.304806    | Explained_variance40.png
-    | 50          |  95.381008    | Explained_variance50.png
-    | 60          |  94.457209    | Explained_variance10.png
-    | 70          |  93.533411    | Explained_variance10.png
-    | 80          |  92.609612    | Explained_variance10.png
-    | 90          |  91.685814    | Explained_variance10.png
-    | 100         |  90.762015    | Explained_variance10.png
+    | 10          |  99.076202    | ![](Data_reduction_compression/tree/main/data/output/Explained_variance10.png)
+    | 20          |  98.152403    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance20.png)
+    | 30          |  97.228605    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance30.png)
+    | 40          |  96.304806    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance40.png)
+    | 50          |  95.381008    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance50.png)
+    | 60          |  94.457209    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance10.png)
+    | 70          |  93.533411    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance10.png)
+    | 80          |  92.609612    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance10.png)
+    | 90          |  91.685814    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance10.png)
+    | 100         |  90.762015    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance10.png)
