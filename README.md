@@ -5,7 +5,7 @@ by
 # The algorithms experimented with with high resolution image data  as a part of preprocessing of data  :SVD, PCA, K-mean 
 
 an example image 
-<img align="right" src="https://github.com/Gitpabora/Data_reduction_compression/sample_data/sample_image.jpg" width="400">
+<img align="right" src="https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/sample_image.jpg" width="400">
 
 A brief note about the methods
     |------------------------------------------------------------------------------------------------------------------------------------------|
