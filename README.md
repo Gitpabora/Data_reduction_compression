@@ -1,51 +1,74 @@
 # CCE AIML - learning data compression for Machine learning
-by 
-### Shriti Singh
-### Parinita Bora
-# The algorithms experimented with with high resolution image data  as a part of preprocessing of data  :SVD, PCA, K-mean 
+### by  Shriti Singh , Parinita Bora
+## The algorithms experimented with with high resolution image data  as a part of preprocessing of data  :SVD, PCA, K-mean 
+ 
+For training a machine learning model When there is large amount of unlabeled data, unsupervised learning algorithms helps in undestanding data. Unsupervised learning also can help in dimensionality reduction. Dimensionality reduction again can help in data visualization (e.g. t-SNA method) When the data is reduced, the complexity of the model can be reduced, so as the traing time.
+####  an example data file with dimention 570X 985 x 3 is an image of Cosmic object, Captured by James Webb Space Telescope (publicly available in Nasa wesite)                                                                                                                    
+![sample image](data/sample_image.jpg) 
 
-an example image 
-<img align="left" src="https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/sample_image.jpg" width="100">
+A brief note about the three unsupervised methods 
 
-A brief note about the methods
-    |------------------------------------------------------------------------------------------------------------------------------------------|
-    | Method                          | Inventor(s)                                                        | Purpose                           |
-    |-------------------------------- | ------------------------------------------------------------------ |---------------------------------- | 
-    |Singular Value Decomposition(SVD)| Independently Eugenio Beltrami, Camille Jordon over 100 yrs back   |To predict a set of optimal factors|
-    |---------------------------------|--------------------------------------------------------------------|-----------------------------------|
-    |Principal comonent Analysis(PCA) | Karl Pearson in 1901, later in 1930, developped by Harold Hotelling| dimnetionality reduction          |
-    |---------------------------------|--------------------------------------------------------------------|-----------------------------------|
-    |K-Means clustering               | First used by James MacQueen in 1967 ,used by Steinhaus in 1956    |In pulse code modulation(Steinhaus)|                              | 
-    |------------------------------------------------------------------------------------------------------------------------------------------|
+| Method                          | Inventor(s)                                                        | Purpose                            |
+|--------------------------------  | ------------------------------------------------------------------ |-------------------------------------  | 
+| Singular Value Decomposition(SVD)  | Independently Eugenio Beltrami, Camille Jordon over 100 yrs back   | To predict a set of optimal factors |
+| Principal comonent Analysis(PCA) https://en.wikipedia.org/wiki/Principal_component_analysis | Karl Pearson in 1901, later in 1930, developped by Harold Hotelling | dimnetionality reduction           |
+| K-Means clustering               | First used by James MacQueen in 1967 ,used by Steinhaus in 1956    | In pulse code modulation(Steinhaus) |          
 
 
 
 
 
-The detailed implementation  notepads 
+## Principal Component Analysis is commonly used   dimensionality reduction method.
+The data is projected onto its orthogonal subspace, that may help in reducing unwanted input data. 
 
-https://drive.google.com/file/d/1_pBJL6v9sRRetdD0tLqvmihOVvtvivf8/view?usp=share_link
-https://colab.research.google.com/drive/1eG843MHVTwohPAqRmsQa8JToxPNJZR1M?usp=share_link
+<img align="right" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/GaussianScatterPCA.svg" width="400">
+
+In the figure the observations are in ellipsoid feature space.If the basis set vectors are orthogonal, highly correlated features can be removed, now the data  lies in a subspace having a smaller dimension.
+This allows reduction of space with the newer projection. Each of the ellipsoid axes with maximal dispersion is choosen. 
+
+The mathematics 
+Step 1.Calculate the covariance matrix of the data
+step 2.Extract the eigenvectors and the eigenvalues of that matrix
+Step 3. Select the number of desired dimensions and filter the eigenvectors to match it, sorting them by their associated eigenvalue
+Step 4. Multiply the original space by the feature vector generated in the previous step.
+
+The compression ratio is calculated for a experimented components :
+new_number_of_values in the image matrix =570*components+985*components+components
+compression ratio = ((original_number_of_values-new_number_of_values after applying PCA )/original_number_of_values)*100
 
 
-##Experiment Results PCA
+| Algorithm                         | The detailed implementation  notepads |                                                       
+|---------------------------------|----------------------------------------|
+| PCA                             |  https://drive.google.com/file/d/1_pBJL6v9sRRetdD0tLqvmihOVvtvivf8/view?usp=share_link |
+                     
+
+
+
+
+## Experiment Results for  PCA
 
 
 https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/output
 
 
-
-
 PCA compr
-    | components  |  c ratio     |Explained variance                        | Reconstructed Image           |    Percentage Reduction
-    |------------ | ------------- | -----------------------------------------|-------------------------------|------------------------|
-    | 10          |  99.076202    | ![](Data_reduction_compression/tree/main/data/output/Explained_variance10.png)
-    | 20          |  98.152403    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance20.png)
-    | 30          |  97.228605    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance30.png)
-    | 40          |  96.304806    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance40.png)
-    | 50          |  95.381008    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance50.png)
-    | 60          |  94.457209    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance10.png)
-    | 70          |  93.533411    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance10.png)
-    | 80          |  92.609612    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance10.png)
-    | 90          |  91.685814    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance10.png)
-    | 100         |  90.762015    | ![](ata_reduction_compression/tree/main/data/output/Explained_variance10.png)
+|components  |  compression ratio     |  Explained variance                        | Reconstructed Image           |    
+|------------ | ------------- | -----------------------------------------|-------------------------------|
+| 10          |  99.076202    | ![ev10](data/output/Explained_variance10.png) | ![rc10](data/output/reconstructed10.png ) | 
+| 20          |  98.152403    | ![ev20](data/output/Explained_variance20.png)  | ![rc20](data/output/reconstructed20.png ) |
+| 30          |  97.228605    | ![ev30](data/output/Explained_variance30.png)  | ![rc30](data/output/reconstructed30.png ) | 
+| 40          |  96.304806    | ![ev40](data/output/Explained_variance40.png)  |![rc40](data/output/reconstructed40.png )  | 
+| 50          |  95.381008    | ![ev50](data/output/Explained_variance50.png)  | ![rc50](data/output/reconstructed50.png ) | 
+| 60          |  94.457209    | ![ev60](data/output/Explained_variance60.png)  | ![rc60](data/output/reconstructed60.png ) | 
+| 70          |  93.533411    | ![ev70](data/output/Explained_variance70.png)  | ![rc70](data/output/reconstructed70.png ) | 
+| 80          |  92.609612    | ![ev80](data/output/Explained_variance80.png)  | ![rc80](data/output/reconstructed80.png ) | 
+| 90      |  91.685814    | ![ev90](data/output/Explained_variance90.png)    | ![rc90](data/output/reconstructed90.png ) |  
+| 100         |  90.762015    | ![ev100](data/output/Explained_variance100.png) | ![rc100](data/output/reconstructed100.png ) 
+
+
+
+
+| Algorithm                         | The detailed implementation  notepads |                                                       
+|---------------------------------|----------------------------------------|
+| SVD                             |  https://colab.research.google.com/drive/1eG843MHVTwohPAqRmsQa8JToxPNJZR1M?usp=share_link |
+
