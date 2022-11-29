@@ -1,6 +1,7 @@
 # CCE AIML - learning data compression for Machine learning
-### by  Shriti Singh , Parinita Bora
-## The algorithms experimented with with high resolution image data  as a part of preprocessing of data  :SVD, PCA, K-mean 
+
+### Date 29/11/2022
+### The algorithms experimented with with high resolution image data  as a part of preprocessing of data  :SVD, PCA, K-mean 
  
 For training a machine learning model When there is large amount of unlabeled data, unsupervised learning algorithms helps in the undestanding of the data. Unsupervised learning also can help in dimensionality reduction. Dimensionality reduction again can help in data visualization (e.g. t-SNA method).When the data is reduced, the complexity of the model can be reduced, so as the traing time.
 ####  an example data file with dimention 570X 985 x 3 is an image of Cosmic object, Captured by James Webb Space Telescope (publicly available in Nasa wesite)                                                                                                                    
