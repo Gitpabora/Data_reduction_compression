@@ -78,7 +78,6 @@ https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/output
 The data is projected onto its orthogonal subspace, that may help in reducing unwanted input data. 
 
 
-![sample image](data/SVD_image.png) 
 Algorithm
 refernce:  https://iopscience.iop.org/article/10.1088/1757-899X/263/4/042082
 
@@ -97,18 +96,18 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 | SVD                             |  https://colab.research.google.com/drive/1eG843MHVTwohPAqRmsQa8JToxPNJZR1M?usp=share_link |
 
 ### SVD copression ratio and recostruction
-|components(k)  |  compression ratio     | Reconstructed imake |   
+|components(k)  |  compression ratio     | Reconstructed image |   
 |------------ | ------------------ |--------------------------|
-| 10          |  97.23    | ![sdvrc10](data/output/sdv_rc10.png ) |
-| 20          |  94.46    | ![sdvrc20](data/output/sdv_rc20.png ) |
-| 30          |  91.69    | ![sdvrc30](data/output/sdv_rc30.png ) |
-| 40          |  88.91    | ![sdvrc40](data/output/sdv_rc40.png ) |
-| 50          |  86.14    | ![sdvrc50](data/output/sdv_rc50.png ) |
-| 60          |  83.37    | ![sdvrc60](data/output/sdv_rc60.png ) |
-| 70          |  80.60    | ![sdvrc70](data/output/sdv_rc70.png ) |
-| 80          |  77.83    | ![sdvrc80](data/output/sdv_rc80.png ) |
-| 90          |  75.06    | ![sdvrc90](data/output/sdv_rc90.png ) |
-| 100         |  72.29%    | ![sdvrc100](data/output/sdv_rc100.png ) |
+| 10          |  97.23    | ![src10](data/output/sdv_rc10.png ) |
+| 20          |  94.46    | ![src20](data/output/sdv_rc20.png ) |
+| 30          |  91.69    | ![src30](data/output/sdv_rc30.png ) |
+| 40          |  88.91    | ![src40](data/output/sdv_rc40.png ) |
+| 50          |  86.14    | ![src50](data/output/sdv_rc50.png ) |
+| 60          |  83.37    | ![src60](data/output/sdv_rc60.png ) |
+| 70          |  80.60    | ![src70](data/output/sdv_rc70.png ) |
+| 80          |  77.83    | ![src80](data/output/sdv_rc80.png ) |
+| 90          |  75.06    | ![src90](data/output/sdv_rc90.png ) |
+| 100         |  72.29%    | ![src100](data/output/sdv_rc100.png ) |
 
 
 ### Comparing the two different approaches
