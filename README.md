@@ -10,10 +10,13 @@ A brief note about the three unsupervised methods
 
 | Method                          | Inventor(s)                                                        | Purpose                            |
 |--------------------------------  | ------------------------------------------------------------------ |-------------------------------------  | 
-| Singular Value Decomposition(SVD) https://en.wikipedia.org/wiki/Singular_value_decomposition  | Independently Eugenio Beltrami, Camille Jordon over 100 yrs back   | To predict a set of optimal factors . Advantage : SDV simplifies data, can remove noise also it can be used for coloured image to segregation components for computational efficiency|
-| Principal comonent Analysis(PCA) https://en.wikipedia.org/wiki/Principal_component_analysis | Karl Pearson in 1901, later in 1930, developped by Harold Hotelling | Dimnetionality reduction is the biggest advantage preserving most significant data         |
-| K-Means clustering               | First used by James MacQueen in 1967 ,used by Steinhaus in 1956    | In pulse code modulation(Steinhaus) |          
-
+| Singular Value Decomposition(SVD) https://en.wikipedia.org/wiki/Singular_value_decomposition  | Independently Eugenio Beltrami, Camille Jordon over 100 yrs back   | To predict a set of optimal factors . |
+| Principal comonent Analysis(PCA) https://en.wikipedia.org/wiki/Principal_component_analysis | Karl Pearson in 1901, later in 1930, developped by Harold Hotelling | Dimnetionality reduction          |
+| K-Means clustering               | First used by James MacQueen in 1967 ,used by Steinhaus in 1956    | In pulse code modulation(by Steinhaus) |          
+advantages 
+SVD : SDV simplifies data, can remove noise also it can be used for coloured image to segregation components for computational efficiency
+PCA : Dimentionality reduction is the biggest advantage preserving most significant data. PCA can also used in data exploratory analysis and visualization
+K-Mean : Simplicity and guerntees convergence 
 
 
 
@@ -90,4 +93,18 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 | Algorithm                         | The detailed implementation  notepads |                                                       
 |---------------------------------|----------------------------------------|
 | SVD                             |  https://colab.research.google.com/drive/1eG843MHVTwohPAqRmsQa8JToxPNJZR1M?usp=share_link |
+
+###SVD copression ratio and recostruction
+|components  |  compression ratio     |    
+|------------ | ------------- | 
+| 10          |  97.23    | ![sdvrc10](data/output/sdv_rc10.png ) |
+| 20          |  94.46    | ![sdvrc20](data/output/sdv_rc20.png ) |
+| 30          |  91.69    | ![sdvrc30](data/output/sdv_rc30.png ) |
+| 40          |  88.91    | ![sdvrc40](data/output/sdv_rc40.png ) |
+| 50          |  86.14    | ![sdvrc50](data/output/sdv_rc50.png ) |
+| 60          |  83.37    | ![sdvrc60](data/output/sdv_rc60.png ) |
+| 70          |  80.60    | ![sdvrc70](data/output/sdv_rc70.png ) |
+| 80          |  77.83    | ![sdvrc80](data/output/sdv_rc80.png ) |
+| 90          |  75.06    | ![sdvrc90](data/output/sdv_rc90.png ) |
+| 100         |  72.29%    | ![sdvrc100](data/output/sdv_rc100.png ) |
 
