@@ -84,11 +84,16 @@ refernce:  https://iopscience.iop.org/article/10.1088/1757-899X/263/4/042082
 
 
 ### SVD Steps:
-Step1.getting three component matrices with Red , Blue and green constituents
+Step1. getting three component matrices with Red , Blue and green constituents
+
 Step2. Applying SVD on each of the three components to generate three vectors for each of the matrices
+
 Step3. Preserving only K  ie Selecting k columns from U matrix and k rows from VT matrix, and resetting rest to zero
+
 Step4. Reconstructing the coloured components from U and V
+
 Step5. Final image is formed by concatenating the three components 
+
 Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes) / original_Bytes * 100
 
 
@@ -99,13 +104,13 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 ### SVD copression ratio and recostruction
 |components(k)  |  compression ratio     | Reconstructed image |   
 |------------ | ------------------ |--------------------------|
-| 10          |  97.23    | ![src10](data/output/sdv_rc10.png ) |
-| 20          |  94.46    | ![src20](data/output/sdv_rc20.png ) |
-| 30          |  91.69    | ![src30](data/output/sdv_rc30.png ) |
-| 40          |  88.91    | ![src40](data/output/sdv_rc40.png ) |
-| 50          |  86.14    | ![src50](data/output/sdv_rc50.png ) |
-| 60          |  83.37    | ![src60](data/output/sdv_rc60.png ) |
-| 70          |  80.60    | ![src70](data/output/sdv_rc70.png ) |
+| 10          |  97.23    | ![src10](data/output/svd_rc10.png ) |
+| 20          |  94.46    | ![src20](data/output/svd_rc20.png ) |
+| 30          |  91.69    | ![src30](data/output/svd_rc30.png ) |
+| 40          |  88.91    | ![src40](data/output/svd_rc40.png ) |
+| 50          |  86.14    | ![src50](data/output/svd_rc50.png ) |
+| 60          |  83.37    | ![src60](data/output/svd_rc60.png ) |
+| 70          |  80.60    | ![src70](data/output/svd_rc70.png ) |
 | 80          |  77.83    | ![src80](data/output/sdv_rc80.png ) |
 | 90          |  75.06    | ![src90](data/output/sdv_rc90.png ) |
 | 100         |  72.29%    | ![src100](data/output/sdv_rc100.png ) |
