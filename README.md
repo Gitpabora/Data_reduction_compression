@@ -21,7 +21,7 @@ A brief note about the three unsupervised methods
 Advantages 
 1. SVD : SDV simplifies data, can remove noise also it can be used for coloured image to segregation components for computational efficiency
 2. PCA : Dimentionality reduction is the biggest advantage preserving most significant data. PCA can also used in data exploratory analysis and visualization
-3. K-Mean : Simplicity and guerntees convergence 
+3. K-Mean : Simplicity and guarntees convergence. It provides good representation of reduced features/ data.  
 
 
 
@@ -121,4 +121,11 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
  
  2.The compression ratio higher in PCA for the same value of component in PCA and K value in SVD
  
-   
+## 3. K-mean clustering is a simple and popular technique for data partitoning
+
+## Future scope including the below
+
+1. Exploring other data reduction techniques 
+2. Most imporatnatly (a) Experimenting with large dataset (b) test for the measures of these algorithms in terms of the impact on the model performance (c) when which algorthim is suitable
+
+
