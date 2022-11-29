@@ -59,16 +59,16 @@ https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/output
 
 |components(Principal component)  |  compression ratio (%)    |  Explained variance                        | Reconstructed Image           |    
 |------------ | ------------- | -----------------------------------------|-------------------------------|
-| 10          |  99.076202    | ![ev10](data/output/Explained_variance10.png) | ![rc10](data/output/reconstructed10.png ) | 
-| 20          |  98.152403    | ![ev20](data/output/Explained_variance20.png)  | ![rc20](data/output/reconstructed20.png ) |
-| 30          |  97.228605    | ![ev30](data/output/Explained_variance30.png)  | ![rc30](data/output/reconstructed30.png ) | 
-| 40          |  96.304806    | ![ev40](data/output/Explained_variance40.png)  |![rc40](data/output/reconstructed40.png )  | 
-| 50          |  95.381008    | ![ev50](data/output/Explained_variance50.png)  | ![rc50](data/output/reconstructed50.png ) | 
-| 60          |  94.457209    | ![ev60](data/output/Explained_variance60.png)  | ![rc60](data/output/reconstructed60.png ) | 
-| 70          |  93.533411    | ![ev70](data/output/Explained_variance70.png)  | ![rc70](data/output/reconstructed70.png ) | 
-| 80          |  92.609612    | ![ev80](data/output/Explained_variance80.png)  | ![rc80](data/output/reconstructed80.png ) | 
-| 90      |  91.685814    | ![ev90](data/output/Explained_variance90.png)    | ![rc90](data/output/reconstructed90.png ) |  
-| 100         |  90.762015    | ![ev100](data/output/Explained_variance100.png) | ![rc100](data/output/reconstructed100.png ) |
+| 10          |  99.076    | ![ev10](data/output/Explained_variance10.png) | ![rc10](data/output/reconstructed10.png ) | 
+| 20          |  98.15    | ![ev20](data/output/Explained_variance20.png)  | ![rc20](data/output/reconstructed20.png ) |
+| 30          |  97.23   | ![ev30](data/output/Explained_variance30.png)  | ![rc30](data/output/reconstructed30.png ) | 
+| 40          |  96.30   | ![ev40](data/output/Explained_variance40.png)  |![rc40](data/output/reconstructed40.png )  | 
+| 50          |  95.38    | ![ev50](data/output/Explained_variance50.png)  | ![rc50](data/output/reconstructed50.png ) | 
+| 60          |  94.46    | ![ev60](data/output/Explained_variance60.png)  | ![rc60](data/output/reconstructed60.png ) | 
+| 70          |  93.53    | ![ev70](data/output/Explained_variance70.png)  | ![rc70](data/output/reconstructed70.png ) | 
+| 80          |  92.61    | ![ev80](data/output/Explained_variance80.png)  | ![rc80](data/output/reconstructed80.png ) | 
+| 90      |  91.69    | ![ev90](data/output/Explained_variance90.png)    | ![rc90](data/output/reconstructed90.png ) |  
+| 100         |  90.76    | ![ev100](data/output/Explained_variance100.png) | ![rc100](data/output/reconstructed100.png ) |
 
 
 
@@ -112,7 +112,7 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 | 70          |  80.60    | ![src70](data/output/svd_rc70.png ) |
 | 80          |  77.83    | ![src80](data/output/sdv_rc80.png ) |
 | 90          |  75.06    | ![src90](data/output/sdv_rc90.png ) |
-| 100         |  72.29%    | ![src100](data/output/sdv_rc100.png ) |
+| 100         |  72.29    | ![src100](data/output/sdv_rc100.png ) |
 
 
 
@@ -161,4 +161,5 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 1. Exploring other data reduction techniques for ML
 2. Most imporatnatly (a) Experimenting with large dataset and setting up github CI (b) test for the measures of these algorithms in terms of the impact on the model performance (c) when which algorthim is suitable.
 Other References: 1) https://arxiv.org/pdf/1608.05148.pdf  2)https://bair.berkeley.edu/blog/2019/09/19/bit-swap/
-3. Accuracy matrices for K-Mean
+
+Note:all numeric results are rounded to 2decimal places
