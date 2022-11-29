@@ -33,10 +33,10 @@ In the figure the observations are in ellipsoid feature space.If the basis set v
 This allows reduction of space with the newer projection. Each of the ellipsoid axes with maximal dispersion is choosen. 
 
 ### The steps in PCA mathematics 
-Step 1.Calculate the covariance matrix of the data
-step 2.Extract the eigenvectors and the eigenvalues of that matrix
-Step 3. Select the number of desired dimensions and filter the eigenvectors to match it, sorting them by their associated eigenvalue
-Step 4. Multiply the original space by the feature vector generated in the previous step.
+Step1. Calculate the covariance matrix of the data
+step2. Extract the eigenvectors and the eigenvalues of that matrix
+Step3. Select the number of desired dimensions and filter the eigenvectors to match it, sorting them by their associated eigenvalue
+Step4. Multiply the original space by the feature vector generated in the previous step.
 
 The compression ratio calculated for a experimented components :
 new_number_of_values in the image matrix =570*components+985*components+components
@@ -76,7 +76,7 @@ https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/output
 The data is projected onto its orthogonal subspace, that may help in reducing unwanted input data. 
 
 ![svd image](data/output/SVD_image.png)
-The image is referenced from Internet sources
+Note: The image is referenced from Internet sources
 
 Algorithm
 refernce:  https://iopscience.iop.org/article/10.1088/1757-899X/263/4/042082
@@ -115,13 +115,29 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 | 100         |  72.29%    | ![src100](data/output/sdv_rc100.png ) |
 
 
+
 ### Observations:
- 1. in both the algorithms as the Number of principal component or K the compression  ratio decreases
- 1.Reconstruction for PCA is better at a lower value of number of prncipal components
+ 1. in both the algorithms as the Number of principal component or K the compression  ratio decreases.
+
+ 2.Reconstruction for PCA is better at a lower value of number of prncipal components
  
- 2.The compression ratio higher in PCA for the same value of component in PCA and K value in SVD
+ 3.The compression ratio higher in PCA for the same value of component in PCA and K value in SVD
  
 ## 3. K-mean clustering is a simple and popular technique for data partitoning
+![sample image](data/output/) 
+Note:The image is referenced from Internet sources
+
+### K-mean steps :
+
+ Step 1. An optimal number of cluster (K) is choosen.
+ 
+ Step 2. k  number of points  "centroids" are initialized randomly within the data area.
+ 
+ Step 3. Each data or observation is attributed to own closest centroid.
+ 
+ Step 4. Updation is done for the centroids to hold the value corresponding to the center of  its all  attributed observations.
+ 
+ Step 5. Steps 3-4  is repeated a number of times / until all of the centroids are prominent.
 
 #### TO Do s : including the below
 
