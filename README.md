@@ -10,15 +10,14 @@ A brief note about the three unsupervised methods
 
 | Method                          | Inventor(s)                                                        | Purpose                            |
 |--------------------------------  | ------------------------------------------------------------------ |-------------------------------------  | 
-| Singular Value Decomposition(SVD)  | Independently Eugenio Beltrami, Camille Jordon over 100 yrs back   | To predict a set of optimal factors |
-| Principal comonent Analysis(PCA) https://en.wikipedia.org/wiki/Principal_component_analysis | Karl Pearson in 1901, later in 1930, developped by Harold Hotelling | dimnetionality reduction           |
+| Singular Value Decomposition(SVD) https://en.wikipedia.org/wiki/Singular_value_decomposition  | Independently Eugenio Beltrami, Camille Jordon over 100 yrs back   | To predict a set of optimal factors . Advantage : SDV simplifies data, can remove noise also it can be used for coloured image to segregation components for computational efficiency|
+| Principal comonent Analysis(PCA) https://en.wikipedia.org/wiki/Principal_component_analysis | Karl Pearson in 1901, later in 1930, developped by Harold Hotelling | Dimnetionality reduction is the biggest advantage preserving most significant data         |
 | K-Means clustering               | First used by James MacQueen in 1967 ,used by Steinhaus in 1956    | In pulse code modulation(Steinhaus) |          
 
 
 
 
-
-## Principal Component Analysis is commonly used   dimensionality reduction method.
+## PCA is commonly used  unsupervised dimensionality reduction method.
 The data is projected onto its orthogonal subspace, that may help in reducing unwanted input data. 
 
 <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/GaussianScatterPCA.svg" width="400">
@@ -45,7 +44,7 @@ compression ratio = ((original_number_of_values-new_number_of_values after apply
 
 
 
-## Experiment Results for  PCA
+## Experimental Results for  PCA
 
 
 https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/output
@@ -66,6 +65,26 @@ PCA compr
 | 100         |  90.762015    | ![ev100](data/output/Explained_variance100.png) | ![rc100](data/output/reconstructed100.png ) 
 
 
+
+## SVD is a matrix factorization method where matrix (M) is  decomposed into three matrices (e.g. U, S, V)
+
+The data is projected onto its orthogonal subspace, that may help in reducing unwanted input data. 
+
+
+![sample image](data/SVD_image.png) 
+Algorithm
+refernce:  https://iopscience.iop.org/article/10.1088/1757-899X/263/4/042082
+
+
+Steps:
+
+
+Step1.getting three component matrices with Red , Blue and green constituents
+Step2. Applying SVD on each of the three components to generate three vectors for each of the matrices
+Step3. Preserving only K  ie Selecting k columns from U matrix and k rows from VT matrix, and resetting rest to zero
+Step4. Reconstructing the coloured components from U and V
+Step5. Final image is formed by concatenating the three components 
+Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes) / original_Bytes * 100
 
 
 | Algorithm                         | The detailed implementation  notepads |                                                       
