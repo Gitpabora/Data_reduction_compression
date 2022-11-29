@@ -8,11 +8,11 @@ For training a machine learning model When there is large amount of unlabeled da
 
 A brief note about the three unsupervised methods 
 
-| Method                          | Inventor(s)                                                        | Purpose                            |
-|--------------------------------  | ------------------------------------------------------------------ |-------------------------------------  | 
-| Singular Value Decomposition(SVD) https://en.wikipedia.org/wiki/Singular_value_decomposition  | Independently Eugenio Beltrami, Camille Jordon over 100 yrs back   | To predict a set of optimal factors . |
-| Principal comonent Analysis(PCA) https://en.wikipedia.org/wiki/Principal_component_analysis | Karl Pearson in 1901, later in 1930, developped by Harold Hotelling | Dimnetionality reduction          |
-| K-Means clustering               | First used by James MacQueen in 1967 ,used by Steinhaus in 1956    | In pulse code modulation(by Steinhaus) |   
+| Method                          | Inventor(s)                                                | Purpose   |    |
+|--------------------------------  | -----------------------------------|-------------------------------------  |----|
+| Singular Value Decomposition(SVD) https://en.wikipedia.org/wiki/Singular_value_decomposition  | Independently Eugenio Beltrami, Camille Jordon over 100 yrs back   | To predict a set of optimal factors.| ![svd image](data/output/SVD_image.png) |
+| Principal comonent Analysis(PCA) https://en.wikipedia.org/wiki/Principal_component_analysis | Karl Pearson in 1901, later in 1930, developped by Harold Hotelling | Dimnetionality reduction   | ![pca scat] (<img align="right" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/GaussianScatterPCA.svg" width="400">)      |
+| K-Means clustering               | First used by James MacQueen in 1967 ,used by Steinhaus in 1956    | In pulse code modulation(by Steinhaus) |   ![Kmean image](data/K-mean.png)  |
 
 
 
