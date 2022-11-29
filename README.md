@@ -123,9 +123,9 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
  
 ## 3. K-mean clustering is a simple and popular technique for data partitoning
 
-## Future scopes including the below
+#### TO Do s : including the below
 
 1. Exploring other data reduction techniques for ML
-2. Most imporatnatly (a) Experimenting with large dataset and setting up github CI (b) test for the measures of these algorithms in terms of the impact on the model performance (c) when which algorthim is suitable
-
+2. Most imporatnatly (a) Experimenting with large dataset and setting up github CI (b) test for the measures of these algorithms in terms of the impact on the model performance (c) when which algorthim is suitable.
+Other References: 1) https://arxiv.org/pdf/1608.05148.pdf  2)https://bair.berkeley.edu/blog/2019/09/19/bit-swap/
 
