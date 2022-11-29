@@ -76,8 +76,8 @@ https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/output
 ## 2. SVD is a matrix factorization method where matrix (M) is  decomposed into three matrices (e.g. U, S, V)
 The data is projected onto its orthogonal subspace, that may help in reducing unwanted input data. 
 
-![svd image](data/SVD_image.png)
-
+![svd image](data/output/SVD_image.png)
+The image is referenced from Internet sources
 
 Algorithm
 refernce:  https://iopscience.iop.org/article/10.1088/1757-899X/263/4/042082
