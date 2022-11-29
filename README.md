@@ -2,7 +2,7 @@
 ### by  Shriti Singh , Parinita Bora
 ## The algorithms experimented with with high resolution image data  as a part of preprocessing of data  :SVD, PCA, K-mean 
  
-For training a machine learning model When there is large amount of unlabeled data, unsupervised learning algorithms helps in undestanding data. Unsupervised learning also can help in dimensionality reduction. Dimensionality reduction again can help in data visualization (e.g. t-SNA method) When the data is reduced, the complexity of the model can be reduced, so as the traing time.
+For training a machine learning model When there is large amount of unlabeled data, unsupervised learning algorithms helps in the undestanding of the data. Unsupervised learning also can help in dimensionality reduction. Dimensionality reduction again can help in data visualization (e.g. t-SNA method).When the data is reduced, the complexity of the model can be reduced, so as the traing time.
 ####  an example data file with dimention 570X 985 x 3 is an image of Cosmic object, Captured by James Webb Space Telescope (publicly available in Nasa wesite)                                                                                                                    
 ![sample image](data/sample_image.jpg) 
 
@@ -13,7 +13,6 @@ A brief note about the three unsupervised methods
 | Singular Value Decomposition(SVD) https://en.wikipedia.org/wiki/Singular_value_decomposition  | Independently Eugenio Beltrami, Camille Jordon over 100 yrs back   | To predict a set of optimal factors . |
 | Principal comonent Analysis(PCA) https://en.wikipedia.org/wiki/Principal_component_analysis | Karl Pearson in 1901, later in 1930, developped by Harold Hotelling | Dimnetionality reduction          |
 | K-Means clustering               | First used by James MacQueen in 1967 ,used by Steinhaus in 1956    | In pulse code modulation(by Steinhaus) |   
-
 
 
 
@@ -39,7 +38,7 @@ step 2.Extract the eigenvectors and the eigenvalues of that matrix
 Step 3. Select the number of desired dimensions and filter the eigenvectors to match it, sorting them by their associated eigenvalue
 Step 4. Multiply the original space by the feature vector generated in the previous step.
 
-The compression ratio is calculated for a experimented components :
+The compression ratio calculated for a experimented components :
 new_number_of_values in the image matrix =570*components+985*components+components
 compression ratio = ((original_number_of_values-new_number_of_values after applying PCA )/original_number_of_values)*100
 
@@ -101,7 +100,7 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 |---------------------------------|----------------------------------------|
 | SVD                             |  https://colab.research.google.com/drive/1eG843MHVTwohPAqRmsQa8JToxPNJZR1M?usp=share_link |
 
-### SVD copression ratio and recostruction
+### SVD compression ratio and recostruction
 |components(k)  |  compression ratio     | Reconstructed image |   
 |------------ | ------------------ |--------------------------|
 | 10          |  97.23    | ![src10](data/output/svd_rc10.png ) |
@@ -116,16 +115,17 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 | 100         |  72.29%    | ![src100](data/output/sdv_rc100.png ) |
 
 
-### Comparing the two different approaches
+### Observations:
+ 1. in both the algorithms as the Number of principal component or K the compression  ratio decreases
  1.Reconstruction for PCA is better at a lower value of number of prncipal components
  
  2.The compression ratio higher in PCA for the same value of component in PCA and K value in SVD
  
 ## 3. K-mean clustering is a simple and popular technique for data partitoning
 
-## Future scope including the below
+## Future scopes including the below
 
-1. Exploring other data reduction techniques 
-2. Most imporatnatly (a) Experimenting with large dataset (b) test for the measures of these algorithms in terms of the impact on the model performance (c) when which algorthim is suitable
+1. Exploring other data reduction techniques for ML
+2. Most imporatnatly (a) Experimenting with large dataset and setting up github CI (b) test for the measures of these algorithms in terms of the impact on the model performance (c) when which algorthim is suitable
 
 
