@@ -139,6 +139,12 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
  
  Step 5. Steps 3-4  is repeated a number of times / until all of the centroids are prominent.
  
+ | Algorithm                         | The detailed implementation  notepads |                                                       
+|---------------------------------|----------------------------------------|
+| K-mean                             | https://drive.google.com/file/d/1VFxHAb34riaiYDiqaN0uYt8Jw4hqJbUk/view?usp=sharing |
+
+ 
+ 
  ### Experimental Results for K-Mean
  ### compression ratio in K-Mean with respect to number of clusters
 |number of clusters(k)  |  compression ratio(%)     | scatter plot |   
