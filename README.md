@@ -57,7 +57,7 @@ compression ratio = ((original_number_of_values-new_number_of_values after apply
 https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/output
 
 
-|components(Principal component)  |  compression ratio     |  Explained variance                        | Reconstructed Image           |    
+|components(Principal component)  |  compression ratio (%)    |  Explained variance                        | Reconstructed Image           |    
 |------------ | ------------- | -----------------------------------------|-------------------------------|
 | 10          |  99.076202    | ![ev10](data/output/Explained_variance10.png) | ![rc10](data/output/reconstructed10.png ) | 
 | 20          |  98.152403    | ![ev20](data/output/Explained_variance20.png)  | ![rc20](data/output/reconstructed20.png ) |
@@ -101,7 +101,7 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 | SVD                             |  https://colab.research.google.com/drive/1eG843MHVTwohPAqRmsQa8JToxPNJZR1M?usp=share_link |
 
 ### SVD compression ratio and recostruction
-|components(k)  |  compression ratio     | Reconstructed image |   
+|components(k)  |  compression ratio(%)     | Reconstructed image |   
 |------------ | ------------------ |--------------------------|
 | 10          |  97.23    | ![src10](data/output/svd_rc10.png ) |
 | 20          |  94.46    | ![src20](data/output/svd_rc20.png ) |
@@ -138,6 +138,23 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
  Step 4. Updation is done for the centroids to hold the value corresponding to the center of  its all  attributed observations.
  
  Step 5. Steps 3-4  is repeated a number of times / until all of the centroids are prominent.
+ 
+ ### Experimental Results for K-Mean
+ ### compression ratio in K-Mean with respect to number of clusters
+|number of clusters(k)  |  compression ratio(%)     | scatter plot |   
+|------------ | ------------------ |--------------------------|
+| 10          |  98.25    | ![src10](data/output/scatter_c10.png ) |
+| 20          |  96.49    | ![src20](data/output/scatter_c20.png ) |
+| 30          |  94.74    | ![src30](data/output/scatter_c30.png ) |
+| 40          |  92.98    | ![src40](data/output/scatter_c40.png ) |
+| 50          |  91.23    | ![src50](data/output/scatter_c50.png ) |
+| 60          |  89.47    | ![src60](data/output/scatter_c60.png ) |
+| 70          |  87.72    | ![src70](data/output/scatter_c70.png ) |
+| 80          |  85.96    | ![src80](data/output/scatter_c80.png ) |
+| 90          |  84.21    | ![src90](data/output/scatter_c90.png ) |
+| 100         |  82.46    | ![src100](data/output/scatter_c100.png ) |
+
+ 
 
 #### TO Do s : including the below
 
