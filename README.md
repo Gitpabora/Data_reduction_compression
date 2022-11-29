@@ -69,7 +69,7 @@ https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/output
 | 70          |  93.533411    | ![ev70](data/output/Explained_variance70.png)  | ![rc70](data/output/reconstructed70.png ) | 
 | 80          |  92.609612    | ![ev80](data/output/Explained_variance80.png)  | ![rc80](data/output/reconstructed80.png ) | 
 | 90      |  91.685814    | ![ev90](data/output/Explained_variance90.png)    | ![rc90](data/output/reconstructed90.png ) |  
-| 100         |  90.762015    | ![ev100](data/output/Explained_variance100.png) | ![rc100](data/output/reconstructed100.png ) 
+| 100         |  90.762015    | ![ev100](data/output/Explained_variance100.png) | ![rc100](data/output/reconstructed100.png ) |
 
 
 
@@ -98,7 +98,7 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 
 ### SVD copression ratio and recostruction
 |components(k)  |  compression ratio     | Reconstructed imake |   
-|------------ | ------------- |----------|
+|------------ | ------------------ |--------------------------|
 | 10          |  97.23    | ![sdvrc10](data/output/sdv_rc10.png ) |
 | 20          |  94.46    | ![sdvrc20](data/output/sdv_rc20.png ) |
 | 30          |  91.69    | ![sdvrc30](data/output/sdv_rc30.png ) |
