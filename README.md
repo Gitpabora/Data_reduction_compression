@@ -124,8 +124,8 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
  3.The compression ratio higher in PCA for the same value of component in PCA and K value in SVD
  
 ## 3. K-mean clustering is a simple and popular technique for data partitoning
-![sample image](data/K-mean.png) 
-Note:The image is referenced from Internet sources
+## ![Kmean image](data/K-mean.png) 
+
 
 ### K-mean steps :
 
