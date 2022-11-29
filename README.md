@@ -12,15 +12,20 @@ A brief note about the three unsupervised methods
 |--------------------------------  | ------------------------------------------------------------------ |-------------------------------------  | 
 | Singular Value Decomposition(SVD) https://en.wikipedia.org/wiki/Singular_value_decomposition  | Independently Eugenio Beltrami, Camille Jordon over 100 yrs back   | To predict a set of optimal factors . |
 | Principal comonent Analysis(PCA) https://en.wikipedia.org/wiki/Principal_component_analysis | Karl Pearson in 1901, later in 1930, developped by Harold Hotelling | Dimnetionality reduction          |
-| K-Means clustering               | First used by James MacQueen in 1967 ,used by Steinhaus in 1956    | In pulse code modulation(by Steinhaus) |          
-advantages 
-SVD : SDV simplifies data, can remove noise also it can be used for coloured image to segregation components for computational efficiency
-PCA : Dimentionality reduction is the biggest advantage preserving most significant data. PCA can also used in data exploratory analysis and visualization
-K-Mean : Simplicity and guerntees convergence 
+| K-Means clustering               | First used by James MacQueen in 1967 ,used by Steinhaus in 1956    | In pulse code modulation(by Steinhaus) |   
 
 
 
-## PCA is commonly used  unsupervised dimensionality reduction method.
+
+
+Advantages 
+1. SVD : SDV simplifies data, can remove noise also it can be used for coloured image to segregation components for computational efficiency
+2. PCA : Dimentionality reduction is the biggest advantage preserving most significant data. PCA can also used in data exploratory analysis and visualization
+3. K-Mean : Simplicity and guerntees convergence 
+
+
+
+## 1. PCA is commonly used  unsupervised dimensionality reduction method.
 The data is projected onto its orthogonal subspace, that may help in reducing unwanted input data. 
 
 <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/f/f5/GaussianScatterPCA.svg" width="400">
@@ -28,7 +33,7 @@ The data is projected onto its orthogonal subspace, that may help in reducing un
 In the figure the observations are in ellipsoid feature space.If the basis set vectors are orthogonal, highly correlated features can be removed, now the data  lies in a subspace having a smaller dimension.
 This allows reduction of space with the newer projection. Each of the ellipsoid axes with maximal dispersion is choosen. 
 
-The mathematics 
+### The steps in PCA mathematics 
 Step 1.Calculate the covariance matrix of the data
 step 2.Extract the eigenvectors and the eigenvalues of that matrix
 Step 3. Select the number of desired dimensions and filter the eigenvectors to match it, sorting them by their associated eigenvalue
@@ -47,14 +52,13 @@ compression ratio = ((original_number_of_values-new_number_of_values after apply
 
 
 
-## Experimental Results for  PCA
+### Experimental Results for  PCA
 
 
 https://github.com/Gitpabora/Data_reduction_compression/tree/main/data/output
 
 
-PCA compr
-|components  |  compression ratio     |  Explained variance                        | Reconstructed Image           |    
+|components(Principal component)  |  compression ratio     |  Explained variance                        | Reconstructed Image           |    
 |------------ | ------------- | -----------------------------------------|-------------------------------|
 | 10          |  99.076202    | ![ev10](data/output/Explained_variance10.png) | ![rc10](data/output/reconstructed10.png ) | 
 | 20          |  98.152403    | ![ev20](data/output/Explained_variance20.png)  | ![rc20](data/output/reconstructed20.png ) |
@@ -69,7 +73,7 @@ PCA compr
 
 
 
-## SVD is a matrix factorization method where matrix (M) is  decomposed into three matrices (e.g. U, S, V)
+## 2. SVD is a matrix factorization method where matrix (M) is  decomposed into three matrices (e.g. U, S, V)
 
 The data is projected onto its orthogonal subspace, that may help in reducing unwanted input data. 
 
@@ -79,9 +83,7 @@ Algorithm
 refernce:  https://iopscience.iop.org/article/10.1088/1757-899X/263/4/042082
 
 
-Steps:
-
-
+### SVD Steps:
 Step1.getting three component matrices with Red , Blue and green constituents
 Step2. Applying SVD on each of the three components to generate three vectors for each of the matrices
 Step3. Preserving only K  ie Selecting k columns from U matrix and k rows from VT matrix, and resetting rest to zero
@@ -94,9 +96,9 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 |---------------------------------|----------------------------------------|
 | SVD                             |  https://colab.research.google.com/drive/1eG843MHVTwohPAqRmsQa8JToxPNJZR1M?usp=share_link |
 
-###SVD copression ratio and recostruction
-|components  |  compression ratio     |    
-|------------ | ------------- | 
+### SVD copression ratio and recostruction
+|components(k)  |  compression ratio     | Reconstructed imake |   
+|------------ | ------------- |----------|
 | 10          |  97.23    | ![sdvrc10](data/output/sdv_rc10.png ) |
 | 20          |  94.46    | ![sdvrc20](data/output/sdv_rc20.png ) |
 | 30          |  91.69    | ![sdvrc30](data/output/sdv_rc30.png ) |
@@ -108,3 +110,10 @@ Step5. Calculating the  the compression ratio= (original_Bytes-compressed_Bytes)
 | 90          |  75.06    | ![sdvrc90](data/output/sdv_rc90.png ) |
 | 100         |  72.29%    | ![sdvrc100](data/output/sdv_rc100.png ) |
 
+
+### Comparing the two different approaches
+ 1.Reconstruction for PCA is better at a lower value of number of prncipal components
+ 
+ 2.The compression ratio higher in PCA for the same value of component in PCA and K value in SVD
+ 
+   
