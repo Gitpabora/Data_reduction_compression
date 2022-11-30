@@ -24,6 +24,13 @@ Advantages
 3. K-Mean : Simplicity and guarntees convergence. It provides good representation of reduced features/ data.  
 
 
+### The metric Compression Ratio (CR) is used in the experiment for comparing the three methods 
+CR = ((original_Bytes - compressed_Bytes) / original_Bytes ) * 100
+
+
+
+
+
 
 ## 1. PCA is commonly used  unsupervised dimensionality reduction method.
 The data is projected onto its orthogonal subspace, that may help in reducing unwanted input data. 
@@ -34,14 +41,14 @@ In the figure the observations are in ellipsoid feature space.If the basis set v
 This allows reduction of space with the newer projection. Each of the ellipsoid axes with maximal dispersion is choosen. 
 
 ### The steps in PCA mathematics 
-Step1. Calculate the covariance matrix of the data
-step2. Extract the eigenvectors and the eigenvalues of that matrix
-Step3. Select the number of desired dimensions and filter the eigenvectors to match it, sorting them by their associated eigenvalue
-Step4. Multiply the original space by the feature vector generated in the previous step.
 
-The compression ratio calculated for a experimented components :
-new_number_of_values in the image matrix =570*components+985*components+components
-compression ratio = ((original_number_of_values-new_number_of_values after applying PCA )/original_number_of_values)*100
+Step1. Calculate the covariance matrix of the data
+
+step2. Extract the eigenvectors and the eigenvalues of that matrix
+
+Step3. Select the number of desired dimensions and filter the eigenvectors to match it, sorting them by their associated eigenvalue
+
+Step4. Multiply the original space by the feature vector generated in the previous step.
 
 
 | Algorithm                         | The detailed implementation  notepads |                                                       
